@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Room_information</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+	h1{text-align:center;
+		font-family:courier;
+		font-weight:bold;
+		color:red;
+		background-color:blue;}
+			
+
+	.mySlides {
+		display:none;
+		width:2000px;
+		height:300px;}
+
+	td{
+		background-color:blue;
+		font-family:courier;
+		font-size:30px;
+		color:red;
+		}
+	a:link{
+		color:red;
+		text-decoration:none;
+		}
+
+	a:visited{
+		color:red;
+		}
+	
+	p{
+		font-size:20px;
+		text-align:left;
+		font-family:courier;
+		}
+
+	Input[type="text"],[type="date"]{
+		height: 40px;
+		width:300px;
+		font-size:18px;
+		margin-bottom:20px;
+		padding-left:30px;
+		font-family:courier;		
+		}
+
+	.btn{
+		padding: 15px 30px;
+		color:white;
+		border-radius:4px;
+		border:none;
+		background-color:blue;
+		}
+		
+	
+</style>
+<body>
+
+<h1>HOTEL MANAGEMENT SYSTEM</h1>
+
+
+<div>
+  <img class="mySlides" src="hotel-cover1.jpeg"/>
+  <img class="mySlides" src="hotel-cover2.jpg"/>
+  <img class="mySlides" src="hotel-cover3.jpg"/>
+  <img class="mySlides" src="hotel-cover4.jpg"/>
+  
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<table border="0.5px" cellpadding="10px" cellspacing="10px">
+<tr>
+<td><a href="Hotels.html">HOME</a></td>
+<td><a href="queens1.html">Queens Hotel</a></td>
+<td><a href="roominformation1.html">ROOM_INFORMATION</a></td>
+<td><a href="booking.html">BOOKING</a></td>
+<td><a href="payments.html">PAYMENTS</a></td>
+<td><a href="Reports.html">REPORTS</a></td>
+<td><a href="logout.html">LOG OUT</a></td>
+</tr>
+</table>
+
+
+<td><a href="parklanetwoqueen.html">Park Lane Two Queen</a></td>
+<p>2 Queen bed</p>
+<td><a href="onesuite.html">One Bed Suite</a></td>
+<p> 1 king bed</p>
+
+
+<div class="container"> <form action="room_information.jsp" method="post">
+
+<h2>ROOM_INFORMATION</h2><br/>
+
+</form></div>
+
+</body>
+</html>

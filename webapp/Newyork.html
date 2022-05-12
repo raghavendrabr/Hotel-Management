@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New York</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	h1{text-align:center;
+		font-family:courier;
+		font-weight:bold;
+		color:red;
+		background-color:blue;}
+			
+
+	.mySlides {
+		display:none;
+		width:2000px;
+		height:300px;}
+
+	td{
+		background-color:blue;
+		font-family:courier;
+		font-size:30px;
+		color:red;
+		}
+	a:link{
+		color:yellow;
+		text-decoration:none;
+		}
+	.a:link{
+		color:red;
+		text-decoration:none;
+		}
+
+	a:visited{
+		color:yellow;
+		}
+	.a:visited{
+		color:yellow;
+		}
+	
+	p{
+		font-size:20px;
+		text-align:left;
+		font-family:courier;
+		}
+
+	Input[type="text"],[type="date"]{
+		height: 40px;
+		width:300px;
+		font-size:18px;
+		margin-bottom:20px;
+		padding-left:30px;
+		font-family:courier;		
+		}
+
+	.btn{
+		padding: 15px 30px;
+		color:white;
+		border-radius:4px;
+		border:none;
+		background-color:blue;
+		}
+
+		
+	
+</style>
+</head>
+<body>
+
+<h1>HOTEL MANAGEMENT SYSTEM</h1>
+
+
+<div>
+  <img class="mySlides" src="hotel-cover1.jpeg"/>
+  <img class="mySlides" src="hotel-cover2.jpg"/>
+  <img class="mySlides" src="hotel-cover3.jpg"/>
+  <img class="mySlides" src="hotel-cover4.jpg"/>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<table border="0.5px" cellpadding="10px" cellspacing="10px">
+<tr>
+<td><a href="Newyork.html">New York</a></td>
+<td><a href="Queens.html">Queens</a></td>     
+<td><a href="Washington.html">Washington</a></td>                   
+<td><a href="Atlantic.html">Atlantic</a></td> 
+<td><a href="Philadelphia.html">Philadelphia</a></td>
+</tr>
+</table>
+
+<div class="container"> <form>
+
+<h2>New York Hotels</h2>
+<p><a href="parklane.html" class="a">PARK LANE
+<ul>
+  <li>Very good</li>            
+  <li>2234 reviews</li>
+  <li>Location 9.8</li>
+  <li>prices</li>
+  </ul></a></p>
+<p>Park Lane New York is a deluxe hotel with a European ambiance, 
+providing views over Central Park and the New York skyline.</p>
+<p><a href="ameritania.html" class="a">AMERITANIA
+<ul>
+  <li>Very good</li>            
+  <li>234 review</li>
+  <li>Location 8.8</li>
+  <li>prices</li>
+  </ul></a></p>
+<p>This New York City hotel is located in the Theater District, next to The Ed Sullivan Theater. 
+The hotel offers ticket services and modern rooms with black and white tiled floors</p>
+<p><a href="madison.html" class="a">MADISON
+<ul>
+  <li>Very good</li>            
+  <li>1234 review</li>
+  <li>Location 6.8</li>
+  <li>prices</li>
+  </ul></a></p>
+<img src="park.jpg" width="250" height="300">
+<p>Boasting a fitness center, bar and views of city, 
+NH Collection New York Madison Avenue is set in New York, 
+656 feet from New York Public Library.</p>
+</form></div>
+
+
+</body>
+</html>
